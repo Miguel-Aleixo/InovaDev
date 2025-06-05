@@ -9,10 +9,10 @@ export default function Home() {
         </div>
 
         <div className="flex items-center pr-10 gap-6 text-lg text-zinc-400 cursor-pointer">
-          <p className="hover:opacity-80 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Modelos</p>
-          <p className="hover:opacity-80 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Planos</p>
-          <p className="hover:opacity-80 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Sobre</p>
-          <p className="hover:opacity-80 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Contato</p>
+          <p className="hover:text-green-300 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Modelos</p>
+          <p className="hover:text-green-300 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Planos</p>
+          <p className="hover:text-green-300 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Sobre</p>
+          <p className="hover:text-green-300 transition-all duration-300 relative after:transition-all after:duration-300 hover:after:w-full after:bg-green-300 after:w-0 after:h-[1px] after:absolute after:left-0 after:bottom-0">Contato</p>
         </div>
 
         <div className="flex items-center">
@@ -23,7 +23,7 @@ export default function Home() {
 
       <main className="min-h-screen bg-white">
 
-        <section className="flex flex-col py-35 gap-4 items-center bg-gradient-to-tl from-black via-zinc-900 to-black"> 
+        <section className="flex flex-col py-35 gap-4 items-center bg-gradient-to-tl from-black via-zinc-900 to-black">
 
           <article className="flex flex-col items-center gap-4">
             <div className="text-5xl font-bold flex gap-3">
@@ -43,31 +43,31 @@ export default function Home() {
 
         <section className="bg-black ">
 
-          <article className="flex flex-col items-center p-10">
-            <div className="text-4xl p-10 font-bold text-center">
+          <article className="flex flex-col gap-15 items-center px-10 py-25">
+            <div className="text-4xl font-bold text-center">
               <p>Por que escolher a InovaDev?</p>
             </div>
 
-            <div className="flex gap-6 text-center">
-              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 p-10 shadow-md shadow-zinc-800">
+            <div className="flex gap-6 px-30 text-center w-[1350px]">
+              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 px-5 py-14 w-full shadow-md shadow-zinc-800 transition-all duration-300 hover:shadow-lg">
                 <p className="text-3xl">⚡</p>
                 <p className="text-lg">Entrega em 24h</p>
                 <p className="text-zinc-400 text-sm">Seu site publicado em até um dia útil.</p>
               </div>
 
-               <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 p-10 shadow-md shadow-zinc-800">
+              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 px-5 py-14 w-full shadow-md shadow-zinc-800 transition-all duration-300 hover:shadow-lg">
                 <p className="text-3xl"> 💻 </p>
                 <p className="text-lg">Design Atualizado</p>
                 <p className="text-zinc-400 text-sm">Layout limpo, moderno e otimizado.</p>
               </div>
 
-              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 p-10 shadow-md shadow-zinc-800">
+              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 px-5 py-14 w-full shadow-md shadow-zinc-800 transition-all duration-300 hover:shadow-lg">
                 <p className="text-3xl"> 📱 </p>
                 <p className="text-lg">100% Responsivo</p>
                 <p className="text-zinc-400 text-sm">Funciona perfeitamente em qualquer dispositivo.</p>
               </div>
 
-              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 p-10 shadow-md shadow-zinc-800">
+              <div className="flex flex-col items-center justify-center rounded-lg bg-zinc-900 px-5 py-14 w-full shadow-md shadow-zinc-800 transition-all duration-300 hover:shadow-lg">
                 <p className="text-3xl"> 🛠 </p>
                 <p className="text-lg">Suporte Personalizado</p>
                 <p className="text-zinc-400 text-sm">Atendimento humano e ágil sempre que você precisar.</p>
@@ -75,7 +75,51 @@ export default function Home() {
             </div>
           </article>
         </section>
-        
+
+        <div className="w-full px-20 bg-black">
+          <div className="h-[1px] w-full bg-zinc-500"></div>
+        </div>
+
+        <section className="bg-gradient-to-b from-black to-zinc-900">
+          <article className="flex flex-col gap-20 items-center p-10">
+            <div>
+              <h1 className="text-3xl text-center font-bold">Modelos em destaque</h1>
+            </div>
+
+            <div className="flex gap-20 w-[1350px] h-[350px] items-center">
+              <div className="flex flex-col items-center bg-zinc-900 w-full h-full rounded-lg">
+                <div>
+                  <img src="/images/modelo1.png" alt="Modelo 1" className="rounded-l bg-zinc-700" />
+                </div>
+
+                <div className="flex p-4 w-full justify-center items-center">
+                  <p className="text-lg font-semibold">Modelo 1</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-zinc-900 w-full h-full rounded-lg">
+                <div>
+                  <img src="/images/modelo2.png" alt="Modelo 2" className="w-full h-full rounded-l bg-zinc-700" />
+                </div>
+
+                <div className="flex p-4 w-full justify-center items-center">
+                  <p className="text-lg font-semibold">Modelo 2</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col items-center bg-zinc-900 w-full h-full rounded-lg">
+                <div>
+                  <img src="/images/modelo3.png" alt="Modelo 3" className="w-full h-full rounded-lg bg-zinc-700" />
+                </div>
+
+                <div className="flex p-4 w-full justify-center items-center">
+                  <p className="text-lg font-semibold">Modelo 3</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
       </main>
     </div>
   );
